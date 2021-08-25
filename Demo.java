@@ -120,3 +120,13 @@ public class Demo {
         };
     }
 }
+
+//built-in function
+import java.util.Random;
+public class DaddyGacha {
+    private static String[] daddyList = {"Colm Feore", "Nicholas Campbell", "Noam Jenkins", "Aaron Ashmore", "Kevin Claydon"};
+    public static String rollYourDaddy (int blood) {
+        Random a = new Random();        
+        return daddyList[a.nextInt(daddyList.length) + 1];
+    }   
+}
